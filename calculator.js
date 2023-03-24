@@ -59,17 +59,18 @@ window.addEventListener('load', function() {
     // Display the result in the result element
     document.getElementById("result").textContent = "";
 
-    // Create a new row element
-    var row = document.createElement("tr");
+ // Create a new row element
+var row = document.createElement("tr");
+row.setAttribute("role", "row");
 
-    // Create new cell elements for the service, number of hours + minutes, and price
-    var serviceCell = document.createElement("td");
-    serviceCell.className = "left-align";
-    var numberOfHoursMinutesCell = document.createElement("td");
-    numberOfHoursMinutesCell.className = "center-align";
-    var priceCell = document.createElement("td");
-    priceCell.className = "center-align";
-    priceCell.id = "price";
+// Create new cell elements for the service, number of hours + minutes, and price
+var serviceCell = document.createElement("td");
+serviceCell.className = "left-align";
+var numberOfHoursMinutesCell = document.createElement("td");
+numberOfHoursMinutesCell.className = "center-align";
+var priceCell = document.createElement("td");
+priceCell.className = "center-align";
+priceCell.id = "price";
 
     // Set the text content of the cell elements to the inputted values
   if(!numberOfMinutes){
@@ -80,8 +81,12 @@ window.addEventListener('load', function() {
   }
   var totalMinutes = (numberOfHours * 60) + parseInt(numberOfMinutes);
 
+		serviceCell.textContent = service;
     numberOfHoursMinutesCell.textContent = totalMinutes + "";
     priceCell.textContent = result;
+		if (service == "custom") {
+  priceCell.setAttribute("aria-label", "Custom price: " + pricePerMinute);
+}
     if (service == "service1") {
     serviceCell.textContent = "Transcription & Captioning 12 Hour Turnaround";
   } else if (service == "service2") {
