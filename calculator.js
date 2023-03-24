@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 var totalPrice = 0;
 
 window.addEventListener('load', function() {
@@ -220,4 +222,3 @@ window.addEventListener('load', function() {
     });
   });
 });
-
