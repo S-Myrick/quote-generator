@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="calculator.js"></script>
+   </head>
+  <body>
+    <!-- ARIA label for the heading -->
+    <h4 role="heading" aria-level="2">Form Fields</h4>
+    <div class="form-group">
+      <label for="input-field-1">Full Name:</label>
+      <input type="text" id="input-field-1" aria-labelledby="input-field-1-label">
+    </div>
+    <div class="form-group">
+      <label for="input-field-2">Date:</label>
+      <input type="text" id="input-field-2" aria-labelledby="input-field-2-label">
+    </div>
+    <div class="form-group">
+      <label for="input-field-3">Project Name:</label>
+      <input type="text" id="input-field-3" aria-labelledby="input-field-3-label">
+    </div>
+    <div class="form-group">
+      <label for="input-field-4">Email:</label>
+  	  <input type="text" id="input-field-4" aria-labelledby="input-field-4-label">
+		</div>
+    <div class="form-group">
+      <label for="input-field-5">Legal Entity:</label>
+  	  <input type="text" id="input-field-5" aria-labelledby="input-field-5-label">
+		</div>
+		    <div class="form-group">
+      <label for="input-field-6">Country:</label>
+  	  <input type="text" id="input-field-6" aria-labelledby="input-field-6-label">
+		</div>
+	
+<p aria-hidden="true">
+	
+	---
+	
+</p>
+<!-- HTML form with a dropdown list of services -->
+<form id="calculator-form">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+  <label for="service">Service:</label><br>
+  <select id="service" aria-label="Select a service">
+    <option value="service1">Transcription & Captioning 12 Hour Turnaround</option>
+    <option value="service2">Transcription & Captioning 24 Hour Turnaround</option>
+    <option value="service3">Transcription & Captioning 48 Hour Turnaround</option>
+    <option value="service4">Transcription & Captioning 72 Hour Turnaround</option>
+    <option value="service5">Extended Audio Description</option>
+    <option value="service6">Standard Audio Description</option>
+    <option value="service7">Live Captioning</option>
+    <option value="service8">Open Captions 48 Hour Turnaround</option>
+    <option value="custom">Custom</option>
+  </select><br>
+  <label for="price-per-minute">Price per minute:</label><br>
+  <input type="number" id="price-per-minute" step="0.01" aria-label="Enter price per minute"><br>
+  <label for="number-of-hours">Number of hours:</label><br>
+  <input type="number" id="number-of-hours" aria-label="Enter number of hours"><br>
+  <label for="number-of-minutes">Number of minutes:</label><br>
+  <input type="number" id="number-of-minutes" aria-label="Enter number of minutes"><br><br>
+  <button type="submit" id="calculator-button" role="button" aria-label="Calculate">Calculate</button>
+</form>
+
+<!-- Element to display the result -->
+<p id="result" style="color: #030d69; font-family: 'Nunito';" aria-live="assertive" aria-atomic="true"></p>
+
+<!-- Table to display the inputted values and calculated total price -->
+<table id="table" role="presentation">
+  <tr>
+    <th class="center-align" role="columnheader">Service</th>
+    <th class="center-align" role="columnheader">Total Minutes</th>
+    <th class="center-align" role="columnheader">Price</th>
+    <th role="columnheader"></th>
+  </tr>
+</table>
+</body>
+</html>
