@@ -102,15 +102,14 @@ window.addEventListener('load', function() {
     serviceCell.textContent = "Custom";
   }
     
-      // Append the row to the table
-    document.getElementById("table").appendChild(row);
-    
     // Append the cell elements to the row element
     row.appendChild(serviceCell);
     row.appendChild(numberOfHoursMinutesCell);
     row.appendChild(priceCell);
-    
-    });
+
+    // Append the row to the table
+    document.getElementById("table").appendChild(row);
+
     // Create a new cell element for the delete button
     var deleteCell = document.createElement("td");
     
@@ -154,6 +153,7 @@ window.addEventListener('load', function() {
       currency: 'USD',
       minimumFractionDigits: 2,
       useGrouping: true
+   });
 
   // Format the total price
   const formattedTotalPrice = formatter.format(totalPrice);
@@ -205,7 +205,6 @@ window.addEventListener('load', function() {
     // Call the updateTotalRow function
   updateTotalRow();
 
-
     // Add an event listener to the delete button to handle deleting the row
     deleteButton.addEventListener("click", function() {
         // Get the value of the third cell in the row
@@ -219,7 +218,6 @@ window.addEventListener('load', function() {
 
         // Call the update total row function
         updateTotalRow();
-       });
     });
   });
 });
