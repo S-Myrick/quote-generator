@@ -110,6 +110,7 @@ window.addEventListener('load', function() {
     row.appendChild(numberOfHoursMinutesCell);
     row.appendChild(priceCell);
     
+    });
     // Create a new cell element for the delete button
     var deleteCell = document.createElement("td");
     
