@@ -154,7 +154,6 @@ window.addEventListener('load', function() {
       currency: 'USD',
       minimumFractionDigits: 2,
       useGrouping: true
-  });
 
   // Format the total price
   const formattedTotalPrice = formatter.format(totalPrice);
@@ -220,6 +219,7 @@ window.addEventListener('load', function() {
 
         // Call the update total row function
         updateTotalRow();
+       });
     });
   });
 });
