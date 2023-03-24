@@ -1,5 +1,3 @@
-<script>
-
 var totalPrice = 0;
 
 document.getElementById("calculator-form").addEventListener("submit", function(event) {
@@ -220,6 +218,3 @@ updateTotalRow();
       updateTotalRow();
   });
 });
-
-
-</script>
