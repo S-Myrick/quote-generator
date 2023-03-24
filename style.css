@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Add a 1/4 margin from the left */
+body {
+  margin-left: 5%;
+  font-family: Nunito;
+  color: #030d69;
+}
+
+/* Ensure sufficient contrast between text and background */
+body, button, input, select {
+  background-color: #ffffff;
+  color: #030d69;
+  font-family: Nunito;
+}
+
+button:hover {
+  background-color: #030d69;
+  color: #ffffff;
+}
+* {
+    box-sizing: border-box;
+  }
+
+  /* Align form elements to the left */
+  .left-align {
+    text-align: left;
+  }
+
+  /* Center align table headers */
+  .center-align {
+    text-align: center;
+  }
+
+  /* Style form inputs and labels */
+  .form-group {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-group label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+  }
+
+  .form-group input {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #030d69;
+    margin-bottom: 5px;
+  }
+
+  input[type="number"],
+  select {
+    width: 100%;
+    max-width: 310px;
+    border: 1px solid #030d69;
+  }
+
+  #service {
+    max-width: 310px;
+  }
+
+  #price-per-minute,
+  #number-of-hours,
+  #number-of-minutes {
+    max-width: 90px;
+  }
+
+
+  /* Style the table */
+  .total-row td {
+    border: 0px solid #030d69;
+  }
+
+  .total-price-cell {
+    border: 0px solid #030d69;
+  }
+
+  .total-cell {
+    border-top: 2px solid #030d69;
+  }
+
+  #table {
+    border-spacing: 3px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 3px;
+  }
+
+  .delete-button {
+    cursor: pointer;
+    color: #030d69;
+    font-size: .25em;
+  }
+
+  h2 {
+    color: white;
+  }
+	
+	 h4 {
+    color: white;
+  }
+
