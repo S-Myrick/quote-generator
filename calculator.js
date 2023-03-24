@@ -218,6 +218,7 @@ window.addEventListener('load', function() {
 
         // Call the update total row function
         updateTotalRow();
+       });
     });
   });
 });
